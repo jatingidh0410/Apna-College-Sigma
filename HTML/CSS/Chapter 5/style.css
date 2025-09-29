@@ -1,0 +1,41 @@
+#container{
+    height: 600px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    /* Horizonatal */
+    flex-direction: row;
+    justify-content: flex-start;
+    /* justify-content:space-evenly ; */
+    flex-wrap: wrap;
+    /* vertical */
+    /* align-items: baseline; */
+    align-content:flex-start;
+    
+}
+#org{
+    font-size: 30px;
+    align-self: baseline;
+    flex-basis: 40px;
+    flex-grow: 1;
+}
+#blue{
+    /* flex-grow: 1; */
+    max-width: 400px;
+    flex-shrink: 2;
+}
+h1{
+    text-align: center;
+}
+
+#container div{
+    height: 100px;
+    width: 50px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    /* display: inline-block; This works but we have a better option of felx */
+
+}

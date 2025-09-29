@@ -1,0 +1,32 @@
+.card {
+  height: 300px;
+  width: 250px;
+  border: 5px solid black;
+  display: inline-block;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px black;
+  background-color: #b2a8b8;
+  transition: 0.5s;
+}
+img {
+  /* this means the parent div the image will resize beacause of width:100% */
+  width: 80%;
+  padding-left: 25px;
+  border-radius: 5px;
+}
+.desc {
+  /* padding: 0 0 0 5px; */
+  text-align: center;
+  
+}
+
+.card:hover {
+  box-shadow: 0 8px 20px #f9f871;
+}
+.image {
+  background-color: #00ab90;
+}
+h3{
+    text-decoration: underline;
+}

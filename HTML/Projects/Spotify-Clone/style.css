@@ -1,0 +1,309 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  background-color: #000;
+  color: white;
+  overflow: hidden;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  background-color: #121212;
+  height: 100vh;
+  width: 340px;
+  border-radius: 1rem; /*16px*/
+  margin-right: 0.5rem;
+}
+
+.main-content {
+  background-color: #121212;
+  flex: 1;
+  border-radius: 1rem;
+  overflow: auto;
+  /* margin: 10px 10px 0px 0px; */
+  padding: 0 1.5rem 0 1.5rem;
+}
+
+.music-player {
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 72px;
+}
+
+.nav {
+  background-color: #1f1f1f;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
+  margin: 0.5rem;
+  padding: 0.5rem 0.75 rem;
+}
+a {
+  text-decoration: none;
+  color: white;
+  padding-left: 1rem;
+}
+
+.nav-option {
+  line-height: 2.5rem;
+  padding-left: 1rem;
+  opacity: 0.7;
+}
+.nav-option i {
+  font-size: 1.25rem;
+}
+.nav-option a {
+  font-size: 1rem;
+}
+.nav-option:hover {
+  opacity: 1;
+}
+
+.library {
+  background-color: #121212;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  height: 100%;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin: 0.5rem 1rem;  */
+}
+.lib-option img {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.icons {
+  font-size: 1.25rem;
+  display: flex;
+  opacity: 0.7;
+}
+.icons i {
+  opacity: 0.7;
+  margin-right: 1rem;
+}
+.icons i:hover {
+  opacity: 1;
+}
+
+.box {
+  background-color: #1f1f1f;
+  height: fit-content;
+  border-radius: 1rem;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; */
+  margin: 0.5rem 0 1rem 0;
+  padding: 0.25rem 1.25rem 2rem 1rem;
+}
+
+.box-p1 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.box-p2 {
+  font-size: 0.9rem;
+  /* opacity: 0.75; */
+}
+
+.badge {
+  background-color: white;
+  border: none;
+  border-radius: 1rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  padding: 0.2rem 1rem;
+  /* font-size: 1rem; */
+  height: 2rem;
+  width: fit-content;
+}
+
+.sticky-nav {
+  background-color: #121212;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9rem 0rem 0.9rem 0rem;
+  z-index: 10;
+}
+.b1 button {
+  background-color: #1f1f1f;
+  color: white;
+  margin-left: 0.4rem;
+}
+.install-button {
+  background-color: #1f1f1f;
+  color: white;
+  margin-left: 0.4rem;
+}
+.b2 button {
+  margin-right: 0.4rem;
+}
+.b2 i {
+  margin-right: 1rem;
+}
+#icon_download_button {
+  margin-right: 0.3rem;
+}
+
+@media (max-width: 1000px) {
+  .hide {
+    display: none;
+  }
+}
+
+.card {
+  background-color: #1f1f1f;
+  width: 150px;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  justify-content: space-evenly;
+}
+.cards-container {
+  display: flex;
+
+  flex-wrap: wrap;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.card-info {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.footer {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  width: 90%;
+  height: 50%;
+  border-top: 1px solid white;
+  opacity: 0.4;
+}
+
+.album{
+  /* border: 2px solid white; */
+  /* position: absolute; */
+  height: 4.5rem;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem 0 1rem;
+}
+
+.album img{
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 0;
+}
+
+.playbar-img{
+  margin-left: 1rem;
+  padding-right: 1rem;
+}
+
+.player-controls{
+  /* border: 2px solid white; */
+  /* position: absolute; */
+  /* margin: 64rem; */
+  width: 25%;
+  /* border: 2px solid white; */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+.player-controls i{
+  padding: 0 0.7rem 0 0.7rem;
+  opacity: 0.8;
+}
+.music-player{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.player{
+  /* border: 2px solid white; */
+  height: 4rem;
+  width: 50%;
+  /* margin-left: 22rem; */
+}
+
+.player-icons{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.player-icons img{
+  height: 1rem;
+  padding: 0.2rem 0.5rem 0 0.5rem;
+  opacity: 0.7;
+}
+
+#player-icon3{
+  height: 2.1rem;
+  opacity: 1;
+}
+
+.player-timer{
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content:center;
+  
+}
+
+.progess-bar{
+  width: 70%;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 1rem;
+  cursor: pointer;
+
+}
+.progess-bar::-webkit-slider-runnable-track{
+  background-color: rgba(128, 128, 128, 0.692);
+  height: 0.2rem;
+}
+.progess-bar::-webkit-slider-thumb{
+  appearance: none;
+  height: 1rem;
+  width: 1rem;
+  background-color: #1bd760;
+  border-radius: 50%;
+  margin-top: -0.4rem;
+}

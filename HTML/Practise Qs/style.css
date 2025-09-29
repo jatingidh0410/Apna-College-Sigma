@@ -1,0 +1,36 @@
+/* for index.html */
+/* h1{
+    color: red;
+    background-color: cyan;
+}
+p{
+    color: blueviolet;
+    background-color: blanchedalmond;
+}
+button{
+    color: cornflowerblue;
+    background-color: rgb(40, 12, 130);
+
+} */
+
+/* for PracticeQ10.html */
+h2{
+    color: orange;
+}
+button{
+    color: white;
+    background-color: blue;
+}
+p{
+    
+    background-color: black;
+    color: #ffffff;
+}
+
+/* rgb to hex code
+p1{
+    color:#ffffff;
+    color: rgb(255, 255, 255);
+    color: #ffff00;
+    color: #00ffff;
+} */

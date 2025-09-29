@@ -1,0 +1,32 @@
+/* Q1 Create a box using div. Set */
+.Q1{
+  height: 150px;
+  width: 300px;
+  background-color: grey;
+  border: 5px dotted black;
+  margin-top: 20px;
+  margin-right: 1em;
+  margin-bottom: 40px;
+  margin-left: 2em;
+  padding: 1em;
+}
+ /* Qs2.Create 3 divs with the following properties */
+
+ .Q2{
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin: 1px 5px;
+  display: inline-block;
+}
+
+/*
+Changing list items to display: inline removes bullet points because bullets are part of block-level styling.
+When you make list items inline, they behave like inline text, and list-style is no longer rendered by default.
+*/
+li {
+  display: list-item inline;
+  padding-right: 10px;
+}

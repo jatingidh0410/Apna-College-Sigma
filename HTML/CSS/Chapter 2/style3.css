@@ -1,0 +1,84 @@
+* {
+  font-family: "Georgia";
+}
+h1 {
+  color: #f52936;
+}
+#login,
+#signup {
+  color: #ffffff;
+  background-color: #f52936;
+}
+.upvote {
+  color: wheat;
+  background-color: green;
+}
+
+/* descendant selector */
+.post a {
+  color: purple;
+  background-color: rgb(251, 251, 106);
+}
+
+nav ul li a {
+  color: #f52936;
+}
+
+p + h3 {
+  text-decoration: underline;
+}
+
+.upvote + button {
+  color: wheat;
+  background-color: cornflowerblue;
+}
+
+div > input {
+  background-color: aqua;
+}
+
+input[type="text"] {
+  color: #f52936;
+}
+input[type="password"] {
+  color: green;
+}
+/* input[type]{
+  background-color: ghostwhite;
+} */
+button:hover {
+  color: ghostwhite;
+  background-color: black;
+}
+/* 
+pseudo class :hover
+*/
+h3:hover {
+  color: #f52936;
+  text-decoration: none;
+}
+
+button:active {
+  color: black;
+  background-color: darkgoldenrod;
+}
+
+input[type="radio"]:checked + label {
+  font-weight: 700;
+  color: red;
+}
+h1::first-letter {
+  color: blue;
+}
+p+p::first-line{
+  color: aqua;
+}
+p::selection{
+  background-color:rgb(243, 243, 32);
+}
+h3{
+  background-color: blue;
+}
+h3{
+  background-color: aqua;
+}

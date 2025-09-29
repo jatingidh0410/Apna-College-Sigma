@@ -1,0 +1,76 @@
+* {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+/* .btn-info{
+ background-color: pink;
+} */
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* .btn1{
+  background-color: green;
+  border-radius: 10px;
+  text-align: center;
+  margin: 2px;
+  padding: 5px 10px;
+}
+
+.btn1:hover{
+  box-shadow: 2px 2px 5px black;
+} */
+
+/* .group1{
+  height: 200px;
+  width: 300px;
+  border: 2px solid black;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  
+} */
+
+.group1 {
+  margin: 0px auto;
+  height: 100px;
+  width: 700px;
+  border: 2px solid black;
+  display: flex; /* Make it a flex container */
+  /* justify-content:center ; Center horizontally */
+  align-items: center; /* Center vertically */
+  /* gap: 10px; Optional: adds space between buttons */
+}
+
+.ad {
+  border-radius: 50%;
+}
+
+/* .navbar-nav{
+  border: 2px solid black;
+  display: flex;
+  justify-content: end;
+  margin-right:890px;
+} */
+
+.card {
+  display: inline-flex;
+  margin: 10px;
+  width: 18rem;
+  border-radius: 20px;
+}
+.sen1 {
+  height: 140px;
+  width: 260px;
+  border-radius: 20px;
+  align-self: center;
+  margin-top: 10px;
+}
+
+.an {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <label for="Username">Username:</label>
+        <input
+          id="Username"
+          type="text"
+          placeholder="Enter Username"
+          name="user"
+        />
+      </div>
+      <div>
+        <label for="Password">Password:</label>
+        <input
+          id="Password"
+          type="password"
+          placeholder="Enter Password"
+          name="pass"
+        />
+      </div>
+      <div>
+        <label for="number">Phone No:</label>
+        <input id="number" type="number" placeholder="Enter Phone No" />
+      </div>
+      <div>
+        <label for="date">Date:</label>
+        <input id="date" type="date" />
+      </div>
+      <div>
+        <label for="color">Enter Color Shade:</label>
+        <input id="color" type="color" />
+      </div>
+      <button>Submit</button>
+    </form>
+    <hr />
+    <form action="https://www.youtube.com/results">
+      <lable for="search">Youtube:</lable>
+      <input
+        type="text"
+        id="search"
+        placeholder="Search any Thing"
+        name="search_query"
+      />
+      <button>Search</button>
+      <br />
+      <input type="checkbox" id="age" name="age" />
+      <label for="age">I'M 18&plus;</label>
+    </form>
+    <hr />
+    <form action="">
+      <div>
+        Enter your Favourite Fruit:
+        <input type="radio" name="fruit" value="apple" id="apple" />
+        <label for="apple">Apple</label>
+        <input type="radio" name="fruit" value="mango" id="mango" />
+        <label for="mango">Mango</label>
+        <input type="radio" name="fruit" value="banana" id="banana" />
+        <label for="banana">Banana</label>
+        <input type="radio" name="fruit" value="pineapple" id="pineapple" />
+        <label for="pineapple">PineApple</label>
+        <button>Submit</button>
+      </div>
+      <br />
+      <div>
+        Enter Your Fav Subject:
+        <input type="checkbox" name="subject" id="physics" value="physics" />
+        <lable for="physics">Physics</lable>
+        <input
+          type="checkbox"
+          name="subject"
+          id="chemistry"
+          value="chemistry"
+        />
+        <lable for="chemistry">Chemistry</lable>
+        <input type="checkbox" name="subject" id="math" value="math" />
+        <lable for="math">Math</lable>
+        <input type="checkbox" name="subject" id="computer" value="cs" />
+        <lable for="computer">CS</lable>
+        <button>Submit</button>
+      </div>
+      <br />
+      <div>
+        Choose your Medium of Language:
+        <select name="medium" id="India">
+          <option value="eng">English</option>
+          <option value="hindi">Hindi</option>
+          <option value="mar">Marathi</option>
+        </select>
+        <br /><br />
+        <label for="volume">Select Volume Level :</label>
+        <input
+          type="range"
+          name="vol"
+          id="volume"
+          min="0"
+          max="100"
+          step="10"
+        />
+        <br />
+        <label for="feedback"><textarea id="feedback" name="feedback" placeholder="Enter Your Feedback"></textarea></label>
+      </div>
+    </form>
+  </body>
+</html>
