@@ -22,15 +22,51 @@
 // console.log(a++);
 // console.log(++a); // same for --a
 
-// Comaprison 
+// Comaprison
 // console.log(`Is 10 = 20:${a==b}`);
 
 //Conditional Statements
-let age =23;
+// let age =23;
 
-if(age >= 18){
-    console.log(`You are eligible to vote`);
-}else{
-    console.log(`You can't vote`);
+// if(age >= 18){
+//     console.log(`You are eligible to vote`);
+// }else{
+//     console.log(`You can't vote`);
+// }
+
+// nested if else
+//     let marks = 56;
+// if (marks >= 33){
+//     if (marks >= 80){
+//         console.log("0");
+//     }else{
+//         console.log("A");
+//     }
+// }else{
+//     console.log('Better Luck next Time.');
+// }
+
+// Logical Operator
+// console.log((5>3) && (7>16) );
+// let marks=95;
+// if (marks != 30 && marks >= 80){
+//     console.log("Pass");
+//     console.log("Grade A+")
+// }
+
+// switch case
+
+let light = "YeLLow";
+switch(light.toLowerCase()) {
+  case "red":
+    console.log("stop");
+    break;
+  case "yellow":
+    console.log("slow down");
+    break;
+  case "green":
+    console.log("go");
+    break;
+  default:
+    console.log("light broken.");
 }
-
