@@ -1,5 +1,5 @@
 let day = Math.floor(Math.random()*7)+1;
-
+day =20;
 switch(day){
     case 1:
         console.log('Monday');
@@ -21,7 +21,8 @@ switch(day){
         break;
     case 7:
         console.log('Sunday');
+        alert('No work today');
         break;    
     default:
-        console.log('Calendar Broken');
+        console.error('Calendar Broken');
 }

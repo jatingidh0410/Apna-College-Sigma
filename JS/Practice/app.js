@@ -55,18 +55,28 @@
 // }
 
 // switch case
+// let light = "YeLLow";
+// switch(light.toLowerCase()) {
+//   case "red":
+//     console.log("stop");
+//     break;
+//   case "yellow":
+//     console.log("slow down");
+//     break;
+//   case "green":
+//     console.log("go");
+//     break;
+//   default:
+//     console.log("light broken.");
+// }
 
-let light = "YeLLow";
-switch(light.toLowerCase()) {
-  case "red":
-    console.log("stop");
-    break;
-  case "yellow":
-    console.log("slow down");
-    break;
-  case "green":
-    console.log("go");
-    break;
-  default:
-    console.log("light broken.");
-}
+// alert and prompt
+
+// alert("alert msg");
+// console.error("Calendar Broken");
+// console.warn("");
+
+// let name1 = prompt("Enter your name:");
+// console.log(`Your name is: ${name1}`);
+// let age = prompt("Enter your age:");
+// console.log(`your age is ${age}`);
