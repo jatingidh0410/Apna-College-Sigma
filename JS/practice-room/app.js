@@ -159,11 +159,17 @@
 // console.log(arr2);
 
 // arrays reference
-let languages = ['c','c++','html','javascript','python','java','c#','sql'];
-console.log("Reversed index of javascript is:",languages.reverse().indexOf("javascript"));
+// let languages = ['c','c++','html','javascript','python','java','c#','sql'];
+// console.log("Reversed index of javascript is:",languages.reverse().indexOf("javascript"));
 
-languages[1] == languages[1]
+// languages[1] == languages[1]
 
-const arr3 = [1,2,3,4];
+// const arr3 = [1,2,3,4];
 
 //nested array
+// let nestedArray = [[2,4],[4,7],[8,9]];
+// console.log(nestedArray);
+// nestedArray[2][1]
+// nestedArray[2][0]
+// nestedArray[0][0]
+// nestedArray[0][1]
