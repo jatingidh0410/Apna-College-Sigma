@@ -321,3 +321,7 @@
 // console.log(classInfo[1].nm);
 
 // Math Object
+let step = Math.floor(Math.random() * 10);
+// let step2 = step*100;
+// step2 = Math.floor(step*100);
+console.log(step+1);
