@@ -321,7 +321,49 @@
 // console.log(classInfo[1].nm);
 
 // Math Object
-let step = Math.floor(Math.random() * 10);
+// let step = Math.floor(Math.random() * 10);
 // let step2 = step*100;
 // step2 = Math.floor(step*100);
-console.log(step+1);
+// console.log(step+1);
+
+// functions
+// function hello(){
+//     console.log("hello");
+// }
+// hello();
+
+// function printName(){
+//     console.log("Jatin Gidh");
+//     console.log("BVIMIT");
+// }
+// printName();
+
+// function isAdult(){
+//     let age = 22;
+//     if(age >= 18){
+//         console.log("You are an adult.");
+//     }else{
+//         console.log("You are not a adult.");
+//     }
+// }
+// isAdult();
+
+// function poem(){
+//     console.log("A tree is more than a shadow Blurred against the sky,\nMore than ink spilled on the fringe Of white clouds floating by.\n A tree is more than an April design Or a blighted winter bough Where love and music used to be.\nA tree is something in me,\n Very still and lonely now");
+// }
+// poem();
+
+// function printName(name,age){
+//     console.log(`Your name is ${name} and age is ${age}`);
+// }
+// printName("Jatin",22);
+// printName("Ram",12);
+
+function isAdult(age){
+    if(age >= 18){
+        return "Adult";
+    }else{
+        return "Not Adult";
+    }
+}
+console.log(isAdult(23));
