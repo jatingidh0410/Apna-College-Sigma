@@ -146,7 +146,7 @@
 // console.log(final2);
 // console.log(final2.splice(2,2,"march","april","may"));
 // console.log(final2);
-// console.log(final2.splice(5,1,"june","july")); // start from ,no of entry to delete,what to replace which start 
+// console.log(final2.splice(5,1,"june","july")); // start from ,no of entry to delete,what to replace which start
 // console.log(final2);
 // console.log(final2.splice(8,0,"september","october","november","december"));  // delete none just add elements.
 // console.log(final2);
@@ -173,3 +173,151 @@
 // nestedArray[2][0]
 // nestedArray[0][0]
 // nestedArray[0][1]
+
+//loops
+// console.log("Printing odd no from 1 to 15");
+// for(let i=1; i<=15; i+=2){
+//     console.log(i);
+// }
+
+// console.log("Printing even no from 2 to 10");
+// for(let i=2; i<=10; i+=2){
+//     console.log(i);
+// }
+
+// for(let i=1;i<=10;i++){
+//     console.log(5*i);
+// }
+
+// let numb = parseInt(prompt("Enter a no to get that table"));
+// for(let i=numb;i<=numb*10;i=i+numb){
+//     console.log(i);
+// }
+
+// Nested loops
+// for(let i=1;i<=3;i++){
+//     console.log("Outer Loops",i)
+//     for(let j=1;j<=3;j++){
+//         console.log(j);
+//     }
+// }
+
+// While loop
+// let i=1;
+// while(i<=5){
+//     console.log(i);
+//     i++;
+// }
+
+// let i = 0;
+// while (i <= 20) {
+//   console.log(i);
+//   i+=2;
+// }
+
+// loops in array
+// let fruits = ["mango",'apple',"banana","kiwi","orange","pineapple"];
+// for(let i=0;i<fruits.length;i++){
+//     console.log(i+1,fruits[i]);
+// }
+// for(let i=fruits.length-1;i>=0;i--){
+//     console.log(i+1,fruits[i]);
+// }
+
+//nested arrays
+// let heroes = [
+//   ["ironman", "spiderman", "thor"],
+//   ["superman", "wonder woman", "flash"],
+// ];
+
+// for (let i = 0; i < heroes.length; i++) {
+//   console.log(`List #${i}`);
+//   for (let j = 0; j < heroes[i].length; j++) {
+//     console.log(heroes[i][j]);
+//   }
+// }
+
+// for of loop
+// let fruits = ["mango","apple","banana","litchi","pineapple"];
+// for(fruit of fruits){
+//     console.log(fruit);
+// }
+
+// for(char of "JatinRGidh"){
+//     console.log(char);
+// }
+
+// let heroes = [["Iron Man","Hulk","Thor"],["Spiderman","Black Widow","Hawk Eye"]];
+// for(list of heroes){
+//     for(hero of list){
+//         console.log(hero);
+//     }
+// }
+
+// js object literals
+// const stud = {
+//     name1: "Jatin",
+//     age: 21,
+//     marks : 9.9,
+//     city:"Navi Mumbai"
+// };
+// console.log(stud.city);
+
+// // update val
+// stud.city = "Mumbai";
+// console.log(stud.city);
+
+// stud.gender = "M";
+// console.log(stud);
+
+// stud.marks = [9,9,9.6,9.9];
+// console.log(stud.marks);
+
+// // delete val
+// delete stud.gender;
+// console.log(stud);
+
+// obejct of Objects
+// const classInfo = {
+//   stud1: {
+//     nm: "Jatin",
+//     mrks: "O",
+//     city: "NM",
+//   },
+//   stud2: {
+//     nm: "Sham",
+//     mrks: "A+",
+//     city: "M",
+//   },
+//   stud3: {
+//     nm: "Ram",
+//     mrks: "B+",
+//     city: "KH",
+//   }
+// };
+// console.log(classInfo);
+// console.log(classInfo.stud2.nm);
+
+// Array of Objects
+// const classInfo = [
+//   stud1 = {
+//     nm: "Jatin",
+//     mrks: "O",
+//     city: "NM",
+//   },
+//   stud2 = {
+//     nm: "Sham",
+//     mrks: "A+",
+//     city: "M",
+//   },
+//   stud3 = {
+//     nm: "Ram",
+//     mrks: "B+",
+//     city: "KH",
+//   }
+// ];
+
+// console.log(classInfo);
+// console.log(classInfo[1].nm);
+
+// Math Object
