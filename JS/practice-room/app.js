@@ -367,3 +367,10 @@ function isAdult(age){
     }
 }
 console.log(isAdult(23));
+
+// function exp
+const sum = function(a,b){
+    return a+b;
+}
+
+sum(2,3);
