@@ -405,14 +405,85 @@
 // newFunc(5); // *** IMP
 
 // fun in objects
-const calc ={
-    add: function(a,b){
-        return a+b;
-    }, // or this way
-    sub(a,b){
-        return a-b;
-    }
-};
+// const calc ={
+//     add: function(a,b){
+//         return a+b;
+//     }, // or this way
+//     sub(a,b){
+//         return a-b;
+//     }
+// };
 
-console.log(calc.add(3,5));
-console.log(calc.sub(3,5));
+// console.log(calc.add(3,5));
+// console.log(calc.sub(3,5));
+
+// using this keyword
+// const stud = {
+//     name: "Jatin",
+//     age: 22,
+//     eng: 98,
+//     math: 99,
+//     phy: 97,
+//     getAvg(){
+//         let avg = (this.eng+this.math+this.phy);
+//         console.log(avg);
+//     }
+// };
+
+// try catch
+// console.log("Hello");
+// console.log("Hello");
+// try {
+//     let a = "Jatin"
+//     console.log("Hello");
+//     console.log(a); // wont runa after this
+
+// } catch (error) {
+//     console.log(error);
+// }finally{
+//     console.log("Finally block will always run");
+// }
+
+// arrow function
+// const add = (a, b) => {
+//   console.log(a + b);
+// };
+// add(2, 3);
+
+// implicit return
+// const mul = (a, b) => a * b;
+// console.log(mul(2, 3));
+
+//settime out
+// console.log("Hi There");
+// setTimeout(() => {
+//   console.log("Apna College");
+// }, 4000); // it is in ms
+
+// console.log("Welcome to ");
+
+//scope
+const student = {
+  name: "aman",
+  marks: 95,
+  prop: this, //global scope
+
+  getName: function () {
+    console.log(this);
+    return this.name;
+  },
+  getMarks: () => {
+    console.log(this); //parent's scope
+    return this.marks;
+  },
+  getInfo1: function () {
+    setTimeout(() => {
+      console.log(this);
+    }, 2000);
+  },
+  getInfo2: function () {
+    setTimeout(function () {
+      console.log(this);
+    }, 2000);
+  },
+};
