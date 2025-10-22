@@ -359,18 +359,60 @@
 // printName("Jatin",22);
 // printName("Ram",12);
 
-function isAdult(age){
-    if(age >= 18){
-        return "Adult";
-    }else{
-        return "Not Adult";
-    }
-}
-console.log(isAdult(23));
+// function isAdult(age){
+//     if(age >= 18){
+//         return "Adult";
+//     }else{
+//         return "Not Adult";
+//     }
+// }
+// console.log(isAdult(23));
 
 // function exp
-const sum = function(a,b){
-    return a+b;
-}
+// const sum = function(a,b){
+//     return a+b;
+// }
+// sum(2,3);
 
-sum(2,3);
+// higher order function
+// function multiGreet(func,n){
+//     for(let i=1;i<=n;i++){
+//         func();
+//     }
+// }
+// let greet = function(){
+//     console.log("Hello, Jatin!!!");
+// }
+// multiGreet(greet,5);
+
+// function oddEvenTest(request) {
+//     if(request == "odd"){
+//         return function(n){
+//             console.log(!(n%2 == 0));
+//         }
+//     }else if(request == "even"){
+//         return function(n){
+//             console.log(n%2 == 0);
+//         }
+//     }else{
+//         console.log("Wrong Request.");
+//     }
+// }
+
+// let request= "odd";
+// let newFunc = oddEvenTest(request);
+
+// newFunc(5); // *** IMP
+
+// fun in objects
+const calc ={
+    add: function(a,b){
+        return a+b;
+    }, // or this way
+    sub(a,b){
+        return a-b;
+    }
+};
+
+console.log(calc.add(3,5));
+console.log(calc.sub(3,5));
