@@ -30,7 +30,7 @@ console.log(isEven(8));
 // setTimeout(object.logMessage, 1000); //op hello world
 
 //q4:
-letlength = 4;
+let length = 4;
 function callback() {
   console.log(this.length);
 }
