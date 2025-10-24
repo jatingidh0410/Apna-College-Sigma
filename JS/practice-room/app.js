@@ -463,27 +463,85 @@
 // console.log("Welcome to ");
 
 //scope
-const student = {
-  name: "aman",
-  marks: 95,
-  prop: this, //global scope
+// const student = {
+//   name: "aman",
+//   marks: 95,
+//   prop: this, //global scope
 
-  getName: function () {
-    console.log(this);
-    return this.name;
-  },
-  getMarks: () => {
-    console.log(this); //parent's scope
-    return this.marks;
-  },
-  getInfo1: function () {
-    setTimeout(() => {
-      console.log(this);
-    }, 2000);
-  },
-  getInfo2: function () {
-    setTimeout(function () {
-      console.log(this);
-    }, 2000);
-  },
-};
+//   getName: function () {
+//     console.log(this);
+//     return this.name;
+//   },
+//   getMarks: () => {
+//     console.log(this); //parent's scope
+//     return this.marks;
+//   },
+//   getInfo1: function () {
+//     setTimeout(() => {
+//       console.log(this);
+//     }, 2000);
+//   },
+//   getInfo2: function () {
+//     setTimeout(function () {
+//       console.log(this);
+//     }, 2000);
+//   },
+// };
+// console.log(student.getInfo1());
+// console.log(student.getInfo2());
+
+//array methods
+
+// arr1 = [1, 2, 3, 4, 5];
+// let print = function(el){
+//   console.log(el);
+// }
+// arr1.forEach(print);
+// // oe we can directly use
+// arr1.forEach(element => {
+//   console.log(element);
+// });
+
+// let arr =[{
+//   nm: "jatin",
+//   mrks: 99,
+// },{
+//   nm: "raj",
+//   mrks: 79,
+// },{
+//   nm: "ram",
+//   mrks: 90,
+// }];
+
+// arr.forEach(students => {
+//   console.log(students);
+//   console.log(`Student ${students.nm} has scored:`,students.mrks); // to access individual elems.
+// });
+
+//array methods: map //create a new array using a callback and stores it
+let num = [1,2,3,4,5,6,7,8,4,9,1,2,4];
+
+let double = num.map((el)=>{
+  console.log(`Value Doubled:${el*2}`);
+})
+
+let students =[{
+  nm: "jatin",
+  mrks: 99,
+},{
+  nm: "raj",
+  mrks: 79,
+},{
+  nm: "ram",
+  mrks: 90,
+}];
+
+let gpa = students.map(el =>{
+  return el.mrks /10;
+});
+console.log(gpa);
+
+let even = num.filter(num =>(num%2 == 0));
+console.log(even);
+
+
