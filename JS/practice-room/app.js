@@ -521,9 +521,9 @@
 //array methods: map //create a new array using a callback and stores it
 let num = [1,2,3,4,5,6,7,8,4,9,1,2,4];
 
-let double = num.map((el)=>{
-  console.log(`Value Doubled:${el*2}`);
-})
+// let double = num.map((el)=>{
+//   console.log(`Value Doubled:${el*2}`);
+// })
 
 let students =[{
   nm: "jatin",
@@ -543,5 +543,12 @@ console.log(gpa);
 
 let even = num.filter(num =>(num%2 == 0));
 console.log(even);
+
+let odd = num.every((el) => el%2 != 0);
+console.log(odd); // return whethere it satifise the condition or not
+
+let reduce = num.reduce((prev,el) => (prev+el)); // it reduces an array to a single value
+console.log(reduce)
+  
 
 

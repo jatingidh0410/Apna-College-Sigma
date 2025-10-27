@@ -18,3 +18,4 @@ public class Pattern {
         obj.pattern2();
     }
 }
+
