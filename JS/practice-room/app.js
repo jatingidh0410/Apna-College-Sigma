@@ -519,7 +519,7 @@
 // });
 
 //array methods: map //create a new array using a callback and stores it
-let num = [1,2,3,4,5,6,7,8,4,9,1,2,4];
+let num = [1,2,3,4,5,6,7,8,4,9,1,2,4,18];
 
 // let double = num.map((el)=>{
 //   console.log(`Value Doubled:${el*2}`);
@@ -549,6 +549,14 @@ console.log(odd); // return whethere it satifise the condition or not
 
 let reduce = num.reduce((prev,el) => (prev+el)); // it reduces an array to a single value
 console.log(reduce)
-  
+
+let max = num.reduce((max,el)=>{
+  if(max < el){
+    return el;
+  }else{
+    return max;
+  }
+});
+console.log(max);
 
 
