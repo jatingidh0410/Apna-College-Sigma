@@ -57,14 +57,40 @@ public class PQ3 {
         }
         sc.close();
     }
+    public void Q4(){
+        int a=63,b=36;
+        boolean x = (a<b)?true:false;
+        int y= (a>b)?a:b;
+        System.out.println(x+","+y);
+    }
+    public void Q5(){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a year: ");
+        int year = sc.nextInt();
 
-
+        if (year % 4 == 0) { // || year %100 != 0;
+            if (year % 100 == 0) {
+                if (year % 400 == 0) {
+                    System.out.println("Leap Year");
+                } else {
+                    System.out.println("Not a Leap Year");
+                }
+            } else {
+                System.out.println("Leap Year");
+            }
+        } else {
+            System.out.println("Not a Leap Year");
+        }
+        sc.close();
+    }
 
     public static void main(String[] args) {
         PQ3 obj = new PQ3();
 
-        // obj.Q1();
-        // obj.Q2();
+        obj.Q1();
+        obj.Q2();
         obj.Q3();
+        obj.Q4();
+        obj.Q5();
     }
 }
