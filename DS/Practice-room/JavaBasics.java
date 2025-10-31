@@ -72,7 +72,29 @@ public class JavaBasics{
 
         sc.close();
     }
-    
+    public void print1to10(){
+        int counter = 1;
+        while(counter<=10){
+            System.out.println(counter);
+            counter++;
+        }
+    }
+    public void print1ton(int num){
+        int counter = 1;
+        while(counter <= num){
+            System.out.print(counter+" ");
+            counter++;
+        }
+    }
+    public void sumOfNNaturalNums(int num1){
+        int sum=0;
+        int counter = 1;
+        while(counter <= num1){
+           sum = sum+counter;
+            counter++;
+        }
+        System.out.println("Sum of 1 to "+num1+" num is:"+sum);
+    }
     public static void main(String[] args) {
        JavaBasics obj = new JavaBasics();
 
@@ -80,7 +102,12 @@ public class JavaBasics{
     //    obj.areaOfRectangle();
     //    obj.dataTypes();
     //    obj.sumOf2Num();
-       obj.areaOfCircle();
+    //    obj.areaOfCircle();
+    //    obj.print1to10();
+    //    obj.print1ton(15);
+       obj.sumOfNNaturalNums(5);
+
+        
 
 
 
