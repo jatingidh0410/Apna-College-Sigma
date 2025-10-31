@@ -519,44 +519,50 @@
 // });
 
 //array methods: map //create a new array using a callback and stores it
-let num = [1,2,3,4,5,6,7,8,4,9,1,2,4,18];
+// let num = [1,2,3,4,5,6,7,8,4,9,1,2,4,18];
 
 // let double = num.map((el)=>{
 //   console.log(`Value Doubled:${el*2}`);
 // })
 
-let students =[{
-  nm: "jatin",
-  mrks: 99,
-},{
-  nm: "raj",
-  mrks: 79,
-},{
-  nm: "ram",
-  mrks: 90,
-}];
+// let students =[{
+//   nm: "jatin",
+//   mrks: 99,
+// },{
+//   nm: "raj",
+//   mrks: 79,
+// },{
+//   nm: "ram",
+//   mrks: 90,
+// }];
 
-let gpa = students.map(el =>{
-  return el.mrks /10;
-});
-console.log(gpa);
+// let gpa = students.map(el =>{
+//   return el.mrks /10;
+// });
+// console.log(gpa);
 
-let even = num.filter(num =>(num%2 == 0));
-console.log(even);
+// let even = num.filter(num =>(num%2 == 0));
+// console.log(even);
 
-let odd = num.every((el) => el%2 != 0);
-console.log(odd); // return whethere it satifise the condition or not
+// let odd = num.every((el) => el%2 != 0);
+// console.log(odd); // return whethere it satifise the condition or not
 
-let reduce = num.reduce((prev,el) => (prev+el)); // it reduces an array to a single value
-console.log(reduce)
+// let reduce = num.reduce((prev,el) => (prev+el)); // it reduces an array to a single value
+// console.log(reduce)
 
-let max = num.reduce((max,el)=>{
-  if(max < el){
-    return el;
-  }else{
-    return max;
-  }
-});
-console.log(max);
+// let max = num.reduce((max,el)=>{
+//   if(max < el){
+//     return el;
+//   }else{
+//     return max;
+//   }
+// });
+// console.log(max);
+
+// default parameter
+function sum(a,b=3){
+  return a+b;
+}
+console.log(sum(2));
 
 
