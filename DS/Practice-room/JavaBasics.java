@@ -12,6 +12,7 @@ public class JavaBasics{
         int a =22;
         String b ="Jatin";
         System.out.println("My name is " + b + " and age is " + a);
+
     }
     public void dataTypes(){ 
         byte b = 8;
@@ -95,6 +96,34 @@ public class JavaBasics{
         }
         System.out.println("Sum of 1 to "+num1+" num is:"+sum);
     }
+    public void printReverseNum(int num){
+        int temp = num;
+        int rev=0;
+        while(temp > 0){
+           int lastVal= temp % 10; 
+           rev = rev*10+lastVal;
+           temp /= 10;
+        }
+        System.err.println("Reversed num is:"+rev); // if we return a value we avoid 0012 case 
+    }
+    public void breakContinue(){
+        // in looping statements we have break; countinue;
+        Scanner sc = new Scanner(System.in);
+        int val;
+        do{
+            System.out.print("Enter a value:");
+            val = sc.nextInt();
+            if(val %10 == 0){
+                break;
+            }
+            if(val %5 == 0){
+                continue;
+            }
+            System.out.println(val);
+        }while(true);
+
+        sc.close();
+    }
     public static void main(String[] args) {
        JavaBasics obj = new JavaBasics();
 
@@ -105,7 +134,9 @@ public class JavaBasics{
     //    obj.areaOfCircle();
     //    obj.print1to10();
     //    obj.print1ton(15);
-       obj.sumOfNNaturalNums(5);
+    //    obj.sumOfNNaturalNums(5);
+    //    obj.printReverseNum(734);
+       obj.breakContinue();
 
         
 

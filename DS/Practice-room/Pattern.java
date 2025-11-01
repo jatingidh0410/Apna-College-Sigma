@@ -8,13 +8,20 @@ public class Pattern {
         }
     }
     public void pattern2(){
-        //System.out.println("Sample");
+        for(int i=1;i<=4;i++){
+            for(int j=1;j<=4;j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
     }
+    
+
 
     public static void main(String[] args) {
         Pattern obj = new Pattern();
 
-        obj.pattern1();
+        // obj.pattern1();
         obj.pattern2();
     }
 }
