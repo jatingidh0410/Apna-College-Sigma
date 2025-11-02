@@ -108,6 +108,23 @@ public class StarPattern {
 
         sc.close();
     }
+    public void pattern7(){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the deapth of J letter pattern:");
+        int n = sc.nextInt();
+        for(int row =1;row<=n;row++){
+            for(int col =1;col<=n;col++){
+                if((row == 1 || (row == n && col <=n/2)) || (col == n/2+1)){              
+                    System.out.print("* "); 
+                }else{
+                    System.out.print("  "); 
+                }
+            }
+            System.out.println();
+        }
+
+        sc.close();
+    }
     public static void main(String[] args) {
         StarPattern obj = new StarPattern();
 
@@ -116,6 +133,7 @@ public class StarPattern {
         // obj.pattern3();
         // obj.pattern4();
         // obj.pattern5();
-        obj.pattern6();
+        // obj.pattern6();
+        obj.pattern7();
     }
 }
