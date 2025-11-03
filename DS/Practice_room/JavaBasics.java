@@ -1,4 +1,4 @@
-// import java.io.Console;
+package DS.Practice_room;
 import java.util.*;
 public class JavaBasics{
     public void samplePrint(){
@@ -144,3 +144,4 @@ public class JavaBasics{
 
     }
 }
+// import java.io.Console;

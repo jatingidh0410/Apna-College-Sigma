@@ -1,3 +1,4 @@
+package DS.Practice_room;
 public class Pattern {
     public void pattern1(){
         for(int i=1;i<=4;i++){
