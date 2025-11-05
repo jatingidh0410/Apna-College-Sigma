@@ -27,6 +27,14 @@ public class Functions {
             System.out.println(num+" is not a palindrome.");
         }
     }
+    public static void mathFunc(){
+       System.out.println( Math.min(1, 2));
+       System.out.println(Math.max(4, 8));
+       System.out.println(Math.abs(-81));
+       System.out.println(Math.sqrt(81));
+       System.out.println(Math.pow(2, 4));
+    //    System.out.println(Math.Avg);
+    }
     public static void main(String[] args) {
         // Notes:
         // - If a function returns something, we specify a data type (e.g., int, String, double)
@@ -41,5 +49,6 @@ public class Functions {
         System.out.println("If True num is even else it is Odd:"+isEvenOrOdd);
 
         palindrome(121);
+        mathFunc();
     }
 }
