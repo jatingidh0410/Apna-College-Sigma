@@ -155,6 +155,21 @@ public class StarPattern {
             System.out.println();
         }
     }
+    public void pattern11(){
+        for(int row=1;row<=5;row++){
+            for(int col=5;col>row;col--){
+                System.out.print("  ");
+            }
+            for(int col2= 1;col2<=row;col2++){
+                System.out.print(col2+" ");
+            }
+            for(int col3=row-1; col3>=1 ;col3--){
+                System.out.print(col3+" ");
+            }
+            System.out.println();
+        }
+        
+    }
     public static void main(String[] args) {
         StarPattern obj = new StarPattern();
 
@@ -167,6 +182,7 @@ public class StarPattern {
         // obj.pattern7();
         // obj.pattern8();
         // obj.pattern9();
-        obj.pattern10();
+        // obj.pattern10();
+        obj.pattern11();
     }
 }
