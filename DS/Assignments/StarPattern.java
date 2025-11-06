@@ -156,8 +156,11 @@ public class StarPattern {
         }
     }
     public void pattern11(){
-        for(int row=1;row<=5;row++){
-            for(int col=5;col>row;col--){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the deapth of the pyramid:");
+        int n = sc.nextInt();
+        for(int row=1;row<=n;row++){
+            for(int col=n;col>row;col--){
                 System.out.print("  ");
             }
             for(int col2= 1;col2<=row;col2++){
@@ -169,6 +172,7 @@ public class StarPattern {
             System.out.println();
         }
         
+        sc.close();
     }
     public static void main(String[] args) {
         StarPattern obj = new StarPattern();
