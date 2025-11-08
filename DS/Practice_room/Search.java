@@ -51,9 +51,7 @@ public class Search {
 
         // binary search
         int arr[]= {10,33,44,56,66,77,88,97,112};
- 
 		 int n = arr.length;
- 
 		 boolean res1= binarySearch(arr,n,97);  // true
 		 System.out.println( res1 );
  
