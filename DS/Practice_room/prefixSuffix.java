@@ -68,5 +68,6 @@ public class prefixSuffix {
         // PrefixAdd();
         // PrefixMax();
         Suffix();
+        SuffixMax();
     }
 }
