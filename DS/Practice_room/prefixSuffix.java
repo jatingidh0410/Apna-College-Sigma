@@ -46,7 +46,7 @@ public class prefixSuffix {
     }
 }
     static void SuffixMax() {
-    int a[] = {10, 4, 7, 40};
+    int a[] = {10, 4, 7, 40,6,22,1};
     int n = a.length;
     int suffixMax[] = new int[n];
     
@@ -67,7 +67,7 @@ public class prefixSuffix {
     public static void main(String[] args) {
         // PrefixAdd();
         // PrefixMax();
-        Suffix();
+        // Suffix();
         SuffixMax();
     }
 }
