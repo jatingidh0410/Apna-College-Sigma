@@ -70,6 +70,20 @@ public class AdvPatterns {
         }
         
     }
+    static void rombus(int n){
+        for(int i=1;i<=n;i++){
+            // space n-i
+            for(int space=n-i;space>=1;space--){
+                System.out.print("  ");
+            }
+            
+            //rombus star
+            for(int star=1;star<=n;star++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
     public static void main(String[] args) {
         
         // InvRotHalfRectPattern();
@@ -78,7 +92,8 @@ public class AdvPatterns {
         // int copy = 5;
         // callByValue(2); // value == copy
         // System.err.println(copy); //call by reference is original value.
-        butterfly(4);
+        // butterfly(4);
+        rombus(7);
 
     }
 }
