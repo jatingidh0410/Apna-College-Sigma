@@ -84,6 +84,50 @@ public class AdvPatterns {
             System.out.println();
         }
     }
+    static void hollowRombus(int n){
+        for(int i=1;i<=n;i++){
+            // space n-i
+            for(int space=n-i;space>=1;space--){
+                System.out.print("  ");
+            }
+            
+            //rombus star
+            for(int star=1;star<=n;star++){
+               if((star == 1 || star==n) || (i==1 || i==n)){
+                    System.out.print("* ");
+               }else{
+                    System.out.print("  ");
+               }
+            }
+            System.out.println();
+        }
+    }
+    static void diamond(int n){
+        
+        for(int row=1;row<=n;row++){
+            // space 
+            for(int col=n-row;col>=1;col--){
+                System.out.print("  ");
+            }
+            // star
+            for(int col2=1;col2<=(2*row)-1;col2++){
+                System.err.print("* ");
+            }
+            System.out.println();
+        }
+        //second half mirror
+        for(int row=n;row>=1;row--){
+            // space 
+            for(int col=n-row;col>=1;col--){
+                System.out.print("  ");
+            }
+            // star
+            for(int col2=1;col2<=(2*row)-1;col2++){
+                System.err.print("* ");
+            }
+            System.out.println();
+        }
+    }
     public static void main(String[] args) {
         
         // InvRotHalfRectPattern();
@@ -93,7 +137,9 @@ public class AdvPatterns {
         // callByValue(2); // value == copy
         // System.err.println(copy); //call by reference is original value.
         // butterfly(4);
-        rombus(7);
+        // rombus(7);
+        // hollowRombus(6);
+        diamond(5);
 
     }
 }
