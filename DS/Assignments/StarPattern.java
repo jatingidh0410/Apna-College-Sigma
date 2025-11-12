@@ -186,7 +186,7 @@ public class StarPattern {
         // obj.pattern7();
         // obj.pattern8();
         // obj.pattern9();
-        obj.pattern10();
-        // obj.pattern11();
+        // obj.pattern10();
+        obj.pattern11();
     }
 }

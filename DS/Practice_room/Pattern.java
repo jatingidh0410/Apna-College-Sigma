@@ -16,14 +16,27 @@ public class Pattern {
             System.out.println();
         }
     }
-    
+    public static void pattern3(int n){
+        // 0 1 triangle .
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                if((i+j)%2 == 0){
+                    System.out.print("1 ");
+                }else{
+                    System.out.print("0 ");
+                }
+            }
+            System.out.println();
+        }
+    }
 
 
     public static void main(String[] args) {
-        Pattern obj = new Pattern();
+        // Pattern obj = new Pattern();
 
         // obj.pattern1();
-        obj.pattern2();
+        // obj.pattern2();
+        pattern3(4);
     }
 }
 

@@ -43,14 +43,42 @@ public class AdvPatterns {
         copy = 10;
         System.out.println(copy);
     }
+    static void butterfly(int n){
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print("* ");
+            }
+            for(int c=1;c<=2*(n-i);c++){
+                System.out.print("  ");
+            }
+            for(int j=1;j<=i;j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        for(int i=n;i>=1;i--){
+            for(int mirror=1;mirror<=i;mirror++){
+                System.out.print("* ");
+            }
+            for(int j=2*(n-i);j>=1;j--){
+                System.out.print( "  ");
+            }
+            for(int mirror=1;mirror<=i;mirror++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        
+    }
     public static void main(String[] args) {
         
         // InvRotHalfRectPattern();
         // InvRotHalfNumRectPattern();
         // floydsTriangle();
-        int copy = 5;
-        callByValue(2); // value == copy
-        System.err.println(copy); //call by reference is original value.
+        // int copy = 5;
+        // callByValue(2); // value == copy
+        // System.err.println(copy); //call by reference is original value.
+        butterfly(4);
 
     }
 }
