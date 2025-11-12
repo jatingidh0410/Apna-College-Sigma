@@ -2,7 +2,7 @@ package DS.Practice_room;
 
 public class BinarytoDecimal {
     
-    public static void binaryToDecimal(int binNum) {
+    public static void binaryToDecimal(int binNum) { 
     int myNum = binNum;
     int pow =0;
     int decNum =0;
