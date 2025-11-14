@@ -23,8 +23,6 @@ public class ArraysP1 {
             System.out.println(marks[i]+" marks got in subject "+(i+1));
         }
         // we can take the average and calculate percentage as well.
-
-        
         sc.close();
     }
 }
