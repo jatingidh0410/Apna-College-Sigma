@@ -1,3 +1,4 @@
+package DS.Practice_Questions;
 public class PQ2 {
 
 public void Q1(){

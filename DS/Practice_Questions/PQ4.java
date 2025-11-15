@@ -1,3 +1,4 @@
+package DS.Practice_Questions;
 import java.util.Scanner;
 
 public class PQ4 {

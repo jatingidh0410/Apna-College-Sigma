@@ -1,4 +1,4 @@
-
+package DS.Practice_Questions;
 import java.util.*;
 
 public class PQ1 {
