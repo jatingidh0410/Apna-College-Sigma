@@ -70,7 +70,7 @@ public class PQ10_SubArray {
     }
 
     public static void main(String[] args) {
-        int arr1[] ={2,4,6,8,10};
+        // int arr1[] ={2,4,6,8,10};
         int arr[] ={-2,-3,4,-1,-2,1,5,-3};
         // subArray(arr1);
         // maxSubArray(arr1);
