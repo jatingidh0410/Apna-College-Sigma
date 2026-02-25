@@ -31,15 +31,48 @@ public class Sorting {
         System.out.println("Selection Sort:"+ Arrays.toString(arr1));
             
     }
-    
     public static void InsertionSort(int arr1[]){
-        
+        for(int i=1;i<arr1.length;i++){
+            int curr = arr1[i];
+            int prev = i-1;
+            while(prev >=0 && arr1[prev] > curr){
+                arr1[prev+1] = arr1[prev];
+                prev--;
+            }
+            arr1[prev+1] = curr;
+        }
+        System.out.print("Insertion Sort:"+Arrays.toString(arr1));
+    }
+    public static void InbuildSort(int arr1[]){
+        Arrays.sort(arr1);
+        System.out.print("Inbuild Sort: (nlogn) "+Arrays.toString(arr1));
+    }
+    public static void CountingSort(int arr1[]){
+        // we use this only when are no range is no too big 
+        int largest = Integer.MIN_VALUE;
+        for(int i=0;i<arr1.length;i++){
+            largest = Math.max(largest, arr1[i]);
+        }
+        int count[] = new int[largest+1];
+        for(int i=0;i<arr1.length;i++){
+            count[arr1[i]]++;
+        }
+        // sorting.
+        int j=0;
+        for(int i=0;i<count.length;i++){
+            while(count[i]>0){
+                arr1[j] = i;
+                j++;
+                count[i]--;
+            }
+        }
+        System.out.print("Counting Sort:"+Arrays.toString(arr1));
     }
     public static void main(String[] args) {
         int arr1[] = {5,4,1,3,2};
 
         // BubbleSort(arr1);
-        SelectionSort(arr1);
-
+        // InbuildSort(arr1);
+        CountingSort(arr1);
     }
 }
