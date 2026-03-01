@@ -1,5 +1,4 @@
-package DS.Practice_room;
-
+package DS.Topics.Arrays;
 import java.util.Scanner;
     
 public class ArraysP1 {

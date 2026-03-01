@@ -1,5 +1,3 @@
-package DS.Practice_room;
-
 public class SpiralMatrix2D {
     
     public static void spiralMatrix(int matrix[][]){
