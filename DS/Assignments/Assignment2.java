@@ -1,3 +1,4 @@
+package DS.Assignments;
 import java.util.*;
 
 public class Assignment2 {
